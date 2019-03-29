@@ -260,8 +260,8 @@ class CreateMeetingActivity : AppCompatActivity(), DateAndTimeFragmentActivityIn
                 val numberIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER)
                 val number = cursor.getString(numberIndex).toString().replace(" ", "")
 
-
-                contactsList.add(number.getLastTenDigits().toLong())
+                val phoneNumber = number.getLastTenDigits().toLong()
+                contactsList.add(phoneNumber)
                 presenter.validateContacts(contactsList)
 
                 val nameIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME)
@@ -270,7 +270,7 @@ class CreateMeetingActivity : AppCompatActivity(), DateAndTimeFragmentActivityIn
                 cursor.close()
 
                 contactsAdapter.addContact(Contact(name = name, status = "Remove",
-                        textColor = R.color.rejected_contact_txt_color, number = number.toLong(), iconUrl = ""))
+                        textColor = R.color.rejected_contact_txt_color, number = phoneNumber, iconUrl = ""))
 
             }
         }

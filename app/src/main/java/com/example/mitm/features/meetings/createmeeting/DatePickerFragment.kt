@@ -14,7 +14,9 @@ import android.view.ViewGroup
 import android.widget.DatePicker
 import android.widget.TextView
 import com.example.mitm.R
+import org.jetbrains.anko.toast
 import java.util.*
+import java.text.SimpleDateFormat
 
 
 class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener {
@@ -33,9 +35,22 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
         monthStringBuilder.append(" $dayOfMonth")
         monthStringBuilder.append(", $year")
 
+        val formatter = SimpleDateFormat("dd/MM/yyyy")
+        val date = Date()
+        val formattedDate = formatter.format(date)
+        val minYear = formattedDate.split('/')[2].toInt()
+        val minMonth = formattedDate.split('/')[1].toInt()
+        val minDay = formattedDate.split('/')[0].toInt()
+
         val defaultValue = "$year-$month-$dayOfMonth"
 
+        Log.i("Date", "$minYear $minMonth $minDay")
+        Log.i("Date selected", "$year $month $dayOfMonth")
+        if (year < minYear || month+1 < minMonth || dayOfMonth < minDay)
+            activity?.toast("Date should not be less than today's date!")
+        else
         callback?.onDateSelected(monthStringBuilder.toString(), defaultValue)
+
     }
 
     fun onDateSelectedListener(activity: Activity) {

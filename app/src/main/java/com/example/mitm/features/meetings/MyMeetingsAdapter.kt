@@ -46,12 +46,50 @@ class MyMeetingsAdapter(var meetings: MutableList<Meeting>, val listItemClick: (
                 itemView.meetingDate.text = meeting_start_date
                 itemView.meetingTime.text = meeting_start_time
                 itemView.duration.text = "Duration: $duration hours"
-
                 Glide.with(context)
                         .load(meeting_creator_pic)
                         .circleCrop()
-                        .error(R.drawable.ic_android_black_24dp)
+                        .error(R.mipmap.user_6)
                         .into(itemView.inivitedByIv)
+
+                Glide.with(context)
+                        .load("")
+                        .circleCrop()
+                        .error(R.mipmap.user_6)
+                        .into(itemView.profileImageIv1)
+                Glide.with(context)
+                        .load("")
+                        .circleCrop()
+                        .error(R.mipmap.user_6)
+                        .into(itemView.profileImageIv2)
+                Glide.with(context)
+                        .load("")
+                        .circleCrop()
+                        .error(R.mipmap.user_6)
+                        .into(itemView.profileImageIv3)
+
+                if (profile_pics.isNotEmpty()) {
+
+                    Glide.with(context)
+                            .load(profile_pics[0])
+                            .circleCrop()
+                            .error(R.mipmap.user_6)
+                            .into(itemView.profileImageIv1)
+                    if (profile_pics.size > 1)
+                    Glide.with(context)
+                            .load(profile_pics[1])
+                            .circleCrop()
+                            .error(R.mipmap.user_6)
+                            .into(itemView.profileImageIv2)
+                    if (profile_pics.size > 2)
+                    Glide.with(context)
+                            .load(profile_pics[2])
+                            .circleCrop()
+                            .error(R.mipmap.user_6)
+                            .into(itemView.profileImageIv3)
+                }
+
+
 
 
                 when(meeting_status) {

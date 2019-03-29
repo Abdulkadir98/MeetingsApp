@@ -152,9 +152,9 @@ class AcceptMeetingDetail : AppCompatActivity(), AcceptMeetingDetailContract.Vie
         Log.i("Meeting detail users:", meetingDetails.user_list.toString())
         val contacts = meetingDetails.user_list.map {
             when (it.status) {
-                0 -> Contact(it.phone, it.first_name, "Pending", R.color.pending_contact_txt_color, it.avatar_url)
-                1 -> Contact(it.phone, it.first_name, "Rejected", R.color.rejected_contact_txt_color, it.avatar_url)
-                2 -> Contact(it.phone, it.first_name, "Accepted", R.color.accepted_contact_txt_color, it.avatar_url)
+                "pending" -> Contact(it.phone, it.first_name, "Pending", R.color.pending_contact_txt_color, it.avatar_url)
+                "rejected" -> Contact(it.phone, it.first_name, "Rejected", R.color.rejected_contact_txt_color, it.avatar_url)
+                "accepted" -> Contact(it.phone, it.first_name, "Accepted", R.color.accepted_contact_txt_color, it.avatar_url)
                 else -> Contact(0, "", "", 0, "")
             }
         }.toMutableList()

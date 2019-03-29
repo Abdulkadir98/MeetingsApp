@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:hint="Duration (hrs)"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:id="@+id/duration"
                     android:imeOptions="actionNext"
                     android:fontFamily="@font/montserrat"/>

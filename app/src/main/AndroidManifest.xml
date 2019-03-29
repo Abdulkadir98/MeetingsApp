@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"          
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.mitm">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
 
 
     <application
@@ -20,7 +20,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".features.meetings.location.YourLocationActivity"
-                  android:theme="@style/NoActionBar">
+                  android:theme="@style/NoActionBar"
+                  android:screenOrientation="portrait">
 
         </activity>
 
@@ -36,18 +37,22 @@
 
         <activity
                 android:name=".features.userprofile.UserProfileActivity"
-                android:parentActivityName=".features.meetings.MyMeetingsActivity"/>
+                android:parentActivityName=".features.meetings.MyMeetingsActivity"
+                android:screenOrientation="portrait"/>
         <activity
                 android:name=".features.meetings.meetingdetail.acceptedmeeting.AcceptMeetingDetail"
                 android:parentActivityName=".features.meetings.MyMeetingsActivity"
+                android:screenOrientation="portrait"
                 android:theme="@style/NoActionBar"/>
         <activity
 
-            android:name=".features.meetings.meetingdetail.MeetingDetailActivity"
-            android:parentActivityName=".features.meetings.MyMeetingsActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+                android:name=".features.meetings.meetingdetail.MeetingDetailActivity"
+                android:parentActivityName=".features.meetings.MyMeetingsActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
                 android:name=".features.meetings.createmeeting.CreateMeetingActivity"
+                android:screenOrientation="portrait"
                 android:parentActivityName=".features.meetings.MyMeetingsActivity"/>
         <activity
                 android:name=".features.meetings.MyMeetingsActivity"
@@ -56,9 +61,11 @@
                 android:launchMode="singleTop"
                 android:roundIcon="@mipmap/ic_launcher_round"
                 android:supportsRtl="true"
+                android:screenOrientation="portrait"
                 android:theme="@style/NoActionBar"/>
         <activity
                 android:name=".features.SplashActivity"
+                android:screenOrientation="portrait"
                 android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -70,6 +77,7 @@
         <activity
                 android:name=".features.signup.SignUpActivity"
                 android:theme="@style/NoActionBar"
+                android:screenOrientation="portrait"
                 android:windowSoftInputMode="adjustResize"/>
 
 
@@ -80,10 +88,11 @@
         <activity
                 android:name=".features.main.MainActivity"
                 android:label="@string/title_activity_main"
+                android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar"/>
 
         <service android:name=".features.meetings.location.FetchAddressIntentService"
-        android:exported="false">
+                 android:exported="false">
         </service>
     </application>
 
