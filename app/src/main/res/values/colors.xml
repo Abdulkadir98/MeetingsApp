@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f8f8f8</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#50e3c2</color>
+    <color name="grey">#9b9b9b</color>
+    <color name="red">#FF0000</color>
+    <color name="activity_background">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="meeting_title_color">#4a4a4a</color>
+    <color name="meeting_duration_txt_color">#4c7bff</color>
+    <color name="meeting_item_members_attending_txt_color">#747373</color>
+    <color name="meeting_item_day_txt_color">#f5f3ff</color>
+    <color name="meeting_item_time_txt_color">#f5fff8</color>
+    <color name="meeting_item_decline_color">#fe3636</color>
+    <color name="meeting_item_join_color">#007aff</color>
+    <color name="signup_changepicture_text_colour">#000000</color>
+    <color name="splach_screen_color">#ffffff</color>
+    <color name="phoneauth_textcolor_enternumber">#9b9b9b</color>
+    <color name="resend_txt_color">#4c7bff</color>
+    <color name="invite_contacts_btn_color">#4c7bff</color>
+    <color name="accepted_contact_txt_color">#77ca92</color>
+    <color name="rejected_contact_txt_color">#fe3636</color>
+    <color name="pending_contact_txt_color">#f5a623</color>
+    <color name="white">#fff</color>
+    <color name="grey_9b">#9b9b9b</color>
+    <color name="grey_4a">#4a4a4a</color>
+    <color name="grey_d8">#d8d8d8</color>
+    <color name="grey_f8">#f8f8f8</color>
+    <color name="meeting_date_border">#704cff</color>
+    <color name="meeting_time_border">#77ca92</color>
+
+    <color name="search_edittext_bg_color">#f3f3f3</color>
+
+    <color name="f5f3ff">#f5f3ff</color>
+
+    <color name="skyblue">#007aff</color>
+    <color name="grey_95">#959595</color>
+    <color name="report_event_color">#fe3636</color>
+</resources>

@@ -1,0 +1,40 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal">
+
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/invitedContactIv"
+            android:src="@drawable/ic_android_black_24dp"/>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/contact_name"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black"
+                tools:text="Pete Abdul Dragon"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/contact_status"
+                android:layout_marginLeft="8dp"
+                android:textColor="#77ca92"
+                tools:text="Accepted"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".features.meetings.MyMeetingsActivity">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/user_6"
+                android:id="@+id/userProfileIv"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_meetings"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/emptyView"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="94dp"
+                android:layout_height="94dp"
+                android:src="@drawable/ic_events_icon"/>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="14sp"
+                      android:text="@string/no_new" android:fontFamily="@font/montserrat_medium"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="14sp"
+                      android:layout_marginLeft="4dp"
+                      android:text="@string/meetings" android:fontFamily="@font/montserrat_bold"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/any_new_meetings_will_appear_here"/>
+
+        <android.support.v7.widget.AppCompatButton
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="48dp"
+                android:id="@+id/retryBtn"
+                android:background="@drawable/retry_btn_border"
+                android:textColor="#486bff"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/retry_btn_txt"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_below="@id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/meeting_item"/>
+
+
+</RelativeLayout>

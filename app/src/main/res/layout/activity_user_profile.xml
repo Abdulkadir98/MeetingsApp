@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".features.userprofile.UserProfileActivity">
+
+    <ImageView
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:id="@+id/profileImageIv"
+            android:src="@drawable/ic_android_black_24dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#4c7bff"
+            android:id="@+id/changePictureTv"
+            android:text="@string/change"
+            android:fontFamily="@font/nunito_sans_bold"/>
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center_horizontal"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameTv"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_centerInParent="true"
+                tools:text="Antonin Hafer"
+                android:fontFamily="@font/montserrat"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#9b9b9b"
+            android:id="@+id/phoneNumber"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            tools:text="9842345123"/>
+
+    <RelativeLayout
+            android:padding="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:background="#f8f8f8"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="@string/push_notification"
+                android:fontFamily="@font/montserrat"/>
+        <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/pushNotificationSwitch"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:padding="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:background="#f8f8f8"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="@string/send_feedback"
+                android:fontFamily="@font/montserrat"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:padding="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:background="#f8f8f8"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                android:text="Logout"
+                android:id="@+id/logoutBtn"
+                android:fontFamily="@font/montserrat"/>
+
+    </RelativeLayout>
+</LinearLayout>

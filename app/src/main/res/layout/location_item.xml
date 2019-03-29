@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:letterSpacing="0.07"
+            android:id="@+id/primaryAddress"
+            tools:text="Anna Nagar"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#9b9b9b"
+            android:letterSpacing="0.07"
+            android:layout_marginTop="4dp"
+            android:id="@+id/secondaryAddress"
+            tools:text="Rajakrishnan Street, Teynampet"
+    />
+
+
+</LinearLayout>

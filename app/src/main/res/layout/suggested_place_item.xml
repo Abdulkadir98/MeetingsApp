@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:layout_width="48dp"
+            android:id="@+id/placeImg"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_height="48dp"/>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="28dp"
+                android:textColor="#000000"
+                android:id="@+id/placeName"
+                android:letterSpacing="0.07"
+                tools:text="Pizza Hut"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                android:layout_marginLeft="28dp"
+                android:id="@+id/placeDistance"
+                android:textColor="#9b9b9b"
+                android:letterSpacing="0.07"
+                tools:text="2 km away"
+        />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="28dp">
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_star"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:id="@+id/placeRating"
+                    android:textColor="#000000"
+                    android:letterSpacing="0.07"
+                    android:layout_marginLeft="5dp"
+                    tools:text="4.5 Rating"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

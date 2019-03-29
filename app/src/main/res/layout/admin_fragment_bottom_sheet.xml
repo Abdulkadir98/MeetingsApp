@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              android:paddingTop="8dp">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+    <ImageView android:layout_width="40dp"
+               android:layout_height="8dp"
+               android:layout_marginTop="24dp"
+               android:background="@drawable/rounded_rect"
+               android:layout_gravity="center_horizontal"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Edit Meeting"
+            android:layout_marginTop="40dp"
+            android:id="@+id/editMeetingTv"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:text="Delete Meeting"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:id="@+id/deleteMeetingTv"
+            android:textColor="@color/report_event_color"
+            android:textSize="16sp"/>
+
+
+</LinearLayout>

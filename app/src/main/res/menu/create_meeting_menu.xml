@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.mitm.features.meetings.MyMeetingsActivity">
+
+    <item android:id="@+id/create_meeting"
+          android:title="CREATE"
+          android:icon="@drawable/ic_create_meeting"
+          app:showAsAction="always"/>
+
+
+</menu>

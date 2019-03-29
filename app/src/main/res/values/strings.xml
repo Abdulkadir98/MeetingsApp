@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MITM</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_timer_value">00:00</string>
+    <string name="signup_add_picture">Add Picture</string>
+    <string name="phoneauth_textcolor_information">We need to send you a confirmation code to get started</string>
+    <string name="resend">
+        <u>Resend</u>
+    </string>
+    <string name="next_menu_item">Next</string>
+    <string name="invite_people_from_contacts_txt">INVITE PEOPLE FROM CONTACTS</string>
+    <string name="decline">DECLINE</string>
+    <string name="join">JOIN</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="suggested_places">SUGGESTED PLACES</string>
+    <string name="people_invited">PEOPLE INVITED</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="your_meetings">YOUR MEETINGS</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="send_confirmation_code_txt">We need to send you a confirmation code to get started</string>
+    <string name="country_code_ind">(+ 91)</string>
+    <string name="agree_terms_privacy">By continuing you agree to &lt;a href=http://link1/terms>Terms and Conditions&lt;/a></string>
+    <string name="next_txt">NEXT</string>
+    <string name="create">CREATE</string>
+    <string name="no_new">No new</string>
+    <string name="meetings">Meetings.</string>
+    <string name="any_new_meetings_will_appear_here">Any new meetings will appear here</string>
+    <string name="retry_btn_txt">RETRY</string>
+    <string name="camera_and_read_external_storage">Need camera and storage permission</string>
+    <string name="storage_rationale">App needs Storage permission to access Gallery</string>
+    <string name="rationale_ask_ok">OK</string>
+    <string name="rationale_ask_cancel">CANCEL</string>
+    <string name="take_photo">Choose Image</string>
+    <string name="your_start_location">YOUR START LOCATION</string>
+    <string name="current_location">Current Location</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude and/or longitude</string>
+    <string name="no_address_found">No address found</string>
+    <string name="address_found">Address found</string>
+    <string name="change">CHANGE</string>
+
+</resources>

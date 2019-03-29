@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            tools:context=".features.meetings.createmeeting.CreateMeeting">
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name of the Meeting"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/meeting_name"
+                    android:fontFamily="@font/montserrat"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateInputLayout"
+                app:errorEnabled="true">
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:hint="Date"
+                    android:id="@+id/date" android:fontFamily="@font/montserrat"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeInputLayout"
+                app:errorEnabled="true">
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Time"
+                    android:id="@+id/time"
+                    android:fontFamily="@font/montserrat"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/durationInputLayout"
+                app:errorEnabled="true">
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Duration (hrs)"
+                    android:inputType="number"
+                    android:id="@+id/duration"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/montserrat"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Short Description (Optional)"
+                android:id="@+id/short_desc"
+                android:fontFamily="@font/montserrat"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/invite_people_from_contacts_txt"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:imeOptions="actionDone"
+                android:background="@color/invite_contacts_btn_color"
+                android:id="@+id/invite_contacts"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:id="@+id/invitedContacts">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

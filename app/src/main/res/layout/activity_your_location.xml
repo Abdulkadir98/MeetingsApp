@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".features.meetings.location.YourLocationActivity">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back"
+                android:id="@+id/userProfileBtn"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_start_location"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/save_location"
+                android:letterSpacing="0.05"
+                android:enabled="false"
+                android:id="@+id/saveLocationBtn"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:text="SAVE"
+        />
+
+
+    </android.support.v7.widget.Toolbar>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="44dp"
+              android:id="@+id/searchPlace"
+              android:layout_below="@id/my_toolbar"
+              android:background="@color/search_edittext_bg_color"
+              android:paddingLeft="12dp"
+              android:layout_margin="@dimen/dp_20"
+              android:hint="Search area, street, building"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:id="@+id/currentLocationContainer"
+            android:layout_below="@id/searchPlace"
+            android:orientation="horizontal">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/getCurrentLocationBtn"
+                android:src="@drawable/ic_located"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:id="@+id/getCurrentLocationTv"
+                android:letterSpacing="0.07"
+                android:text="@string/current_location"
+        />
+    </LinearLayout>
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:id="@+id/progressBar"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_below="@id/currentLocationContainer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

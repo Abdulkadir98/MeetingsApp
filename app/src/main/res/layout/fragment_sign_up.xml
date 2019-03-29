@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".features.signup.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:id="@+id/customToolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/grey_f8">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_8"
+            android:visibility="gone"
+            android:paddingEnd="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_8"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:id="@+id/nextButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.5"
+            android:enabled="false"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="end"
+            android:letterSpacing="0.05"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="@string/next_txt"
+            android:textColor="@color/grey_4a"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="@dimen/dp_83"
+            android:layout_height="@dimen/dp_83"
+            android:id="@+id/profile_image"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/user_6"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_picture"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.06"
+            android:text="@string/signup_add_picture"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+
+    <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="@dimen/sp_14"
+            android:inputType="text"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_margin="20dp"
+            android:maxLength="30"
+            android:hint="First Name"
+            android:textColor="@color/grey_9b"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/grey_9b"
+            android:paddingBottom="@dimen/dp_12"
+            android:backgroundTint="@color/grey_d8"
+    />
+
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/sp_14"
+        android:inputType="text"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_margin="20dp"
+        android:hint="Last Name"
+        android:textColorHint="@color/grey_9b"
+        android:textColor="@color/grey_9b"
+        android:imeOptions="actionDone"
+        android:paddingBottom="@dimen/dp_12"
+        android:maxLength="30"
+        android:backgroundTint="@color/grey_d8"
+
+
+    />
+    <ProgressBar
+            android:id="@+id/indeterminateBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/AppTheme"
+            android:max="100"
+            android:visibility="invisible"
+    />
+
+
+</LinearLayout>
+
+
+
